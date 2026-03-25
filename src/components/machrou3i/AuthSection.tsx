@@ -2,10 +2,12 @@ import { useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { LogIn, Sparkles, Shield, Mail, Lock, User, Eye, EyeOff } from "lucide-react";
 import { useI18n } from "@/i18n";
+import { useNavigate } from "react-router-dom";
 
 export default function AuthSection() {
   const reduceMotion = useReducedMotion();
   const { t } = useI18n();
+  const navigate = useNavigate();
   const [isLogin, setIsLogin] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
@@ -14,6 +16,31 @@ export default function AuthSection() {
     name: "",
     confirmPassword: "",
   });
+  const [authMessage, setAuthMessage] = useState<string | null>(null);
+
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+
+    if (!isLogin) {
+      setAuthMessage(null);
+      return;
+    }
+
+    const email = formData.email.trim().toLowerCase();
+    const password = formData.password.trim();
+
+    if (email === "testalt@gmail.com" && password === "test") {
+      try {
+        window.localStorage.setItem("machrou3i-demo-auth", "true");
+      } catch {
+        // ignore storage errors
+      }
+      setAuthMessage("Connexion réussie (compte de test). Redirection…");
+      navigate("/library");
+    } else {
+      setAuthMessage("Identifiants invalides. Test: testalt@gmail.com / test");
+    }
+  }
 
   return (
     <section id="auth" className="relative min-h-screen px-6 py-16 md:py-20" aria-label="Login / Signup">
@@ -81,6 +108,7 @@ export default function AuthSection() {
               initial={false}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.3 }}
+              onSubmit={handleSubmit}
             >
               {!isLogin && (
                 <motion.div
@@ -178,6 +206,10 @@ export default function AuthSection() {
                     {t("labels.forgotPassword")}
                   </a>
                 </div>
+              )}
+
+              {authMessage && (
+                <p className="text-xs text-muted-foreground">{authMessage}</p>
               )}
 
               <motion.button

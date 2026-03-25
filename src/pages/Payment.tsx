@@ -12,16 +12,17 @@ export default function Payment() {
   const [selectedPlan, setSelectedPlan] = useState<string>("professional");
   const [paymentMethod, setPaymentMethod] = useState<"card" | "paypal" | "bank">("card");
   const [formData, setFormData] = useState({
-    cardNumber: "",
-    expiryDate: "",
-    cvv: "",
-    cardholderName: "",
-    email: "",
-    billingAddress: "",
-    city: "",
-    zipCode: "",
-    country: "",
+    cardNumber: "4242 4242 4242 4242",
+    expiryDate: "12/28",
+    cvv: "123",
+    cardholderName: "Test User",
+    email: "testalt@gmail.com",
+    billingAddress: "123 Test Street",
+    city: "Test City",
+    zipCode: "12345",
+    country: "Test Country",
   });
+  const [paymentDone, setPaymentDone] = useState(false);
 
   const plans = [
     { id: "starter", nameKey: "premium.tierStarter", price: "$29", periodKey: "premium.periodMonth", featureKeys: ["premium.featureBasicPm", "premium.featureTeamAnalytics", "premium.featureStandardReports", "premium.featureEmailSupport", "premium.featureUpTo5Projects"] },
@@ -358,6 +359,8 @@ export default function Payment() {
 
               {/* Submit Button */}
               <motion.button
+                type="button"
+                onClick={() => setPaymentDone(true)}
                 className="w-full glass rounded-xl bg-neon px-6 py-4 text-base font-semibold text-neon-foreground transition-all hover:bg-neon/90"
                 whileHover={reduceMotion ? undefined : { scale: 1.02 }}
                 whileTap={reduceMotion ? undefined : { scale: 0.98 }}
@@ -365,6 +368,9 @@ export default function Payment() {
               >
                 {t("buttons.completePayment")}
               </motion.button>
+              {paymentDone && (
+                <p className="text-sm text-neon text-center mt-3">{t("payment.testSuccess")}</p>
+              )}
             </div>
           </div>
         </div>

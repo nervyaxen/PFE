@@ -13,7 +13,7 @@ import DashboardSection from "@/components/machrou3i/DashboardSection";
 import AIInsightsSection from "@/components/machrou3i/AIInsightsSection";
 import PlatformStackSection from "@/components/machrou3i/PlatformStackSection";
 import { useI18n } from "@/i18n";
-import { Laptop, Smartphone, Monitor, Cpu, Shield, LogIn, Sparkles } from "lucide-react";
+import { Laptop, Smartphone, Monitor, Cpu, Shield } from "lucide-react";
 
 const Index = () => {
   const { t } = useI18n();

@@ -6,7 +6,7 @@ import { useI18n, Language } from "@/i18n";
 const languages: { code: Language; labelKey: string; flag: string }[] = [
   { code: "en", labelKey: "languages.en", flag: "🇬🇧" },
   { code: "fr", labelKey: "languages.fr", flag: "🇫🇷" },
-  { code: "tn", labelKey: "languages.tn", flag: "🇹🇳" },
+  { code: "ar", labelKey: "languages.ar", flag: "🇸🇦" },
 ];
 
 export default function LanguageSwitcher() {
@@ -63,9 +63,8 @@ export default function LanguageSwitcher() {
                   setLanguage(lang.code);
                   setIsOpen(false);
                 }}
-                className={`w-full glass glass-hover rounded-lg px-3 py-2 flex items-center justify-between gap-2 text-sm transition-all ${
-                  language === lang.code ? "neon-outline" : ""
-                }`}
+                className={`w-full glass glass-hover rounded-lg px-3 py-2 flex items-center justify-between gap-2 text-sm transition-all ${language === lang.code ? "neon-outline" : ""
+                  }`}
                 whileHover={reduceMotion ? undefined : { x: 4, scale: 1.02 }}
                 data-narrate={`${t(lang.labelKey)}|${t("labels.switchTo")} ${t(lang.labelKey)}`}
               >

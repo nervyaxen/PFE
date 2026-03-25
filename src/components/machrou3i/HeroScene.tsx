@@ -6,78 +6,7 @@ import { Float, Html, RoundedBox } from "@react-three/drei";
 import { Laptop, Smartphone, Monitor, Sparkles } from "lucide-react";
 import { useI18n } from "@/i18n";
 
-function GlassPanel({ position, rotation, size }: { position: [number, number, number]; rotation: [number, number, number]; size: [number, number, number] }) {
-  return (
-    <Float speed={1.1} rotationIntensity={0.45} floatIntensity={0.35}>
-      <RoundedBox args={size} position={position} rotation={rotation} radius={0.12} smoothness={4}>
-        <meshPhysicalMaterial
-          transparent
-          opacity={0.38}
-          roughness={0.1}
-          metalness={0.2}
-          clearcoat={1}
-          clearcoatRoughness={0.15}
-          transmission={0.8}
-          thickness={0.9}
-          ior={1.35}
-          color="#0a1c14"
-        />
-      </RoundedBox>
-    </Float>
-  );
-}
-
-function Hero3D({ t }: { t: (k: string) => string }) {
-  const panels = useMemo(
-    () => [
-      {
-        position: [-1.4, 0.35, 0] as [number, number, number],
-        rotation: [0.2, -0.35, 0.08] as [number, number, number],
-        size: [1.7, 1.05, 0.08] as [number, number, number],
-      },
-      {
-        position: [0.1, -0.05, -0.2] as [number, number, number],
-        rotation: [0.12, 0.22, -0.04] as [number, number, number],
-        size: [2.2, 1.35, 0.08] as [number, number, number],
-      },
-      {
-        position: [1.55, 0.25, 0.15] as [number, number, number],
-        rotation: [0.18, 0.55, -0.03] as [number, number, number],
-        size: [1.55, 0.9, 0.08] as [number, number, number],
-      },
-    ],
-    [],
-  );
-
-  return (
-    <group>
-      <ambientLight intensity={0.7} />
-      <directionalLight position={[3, 4, 2]} intensity={1.2} />
-      <pointLight position={[-4, 1, 2]} intensity={1.4} color="#1efad1" />
-      <pointLight position={[4, 0, 2]} intensity={1.1} color="#f2c84b" />
-
-      {panels.map((p, i) => (
-        <GlassPanel key={i} position={p.position} rotation={p.rotation} size={p.size} />
-      ))}
-
-      <Float speed={1.4} rotationIntensity={0.7} floatIntensity={0.35}>
-        <Html position={[0.05, 0.15, 0.12]} transform occlude style={{ pointerEvents: "none" }}>
-          <div className="glass rounded-2xl px-4 py-3 neon-outline">
-            <div className="flex items-center gap-2">
-              <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-primary">
-                <Sparkles className="h-4 w-4 text-primary-foreground" />
-              </span>
-              <div>
-                <p className="text-xs font-semibold tracking-wide text-shimmer">{t("hero.aiRoadmap")}</p>
-                <p className="text-xs text-muted-foreground">{t("hero.risksDeadlines")}</p>
-              </div>
-            </div>
-          </div>
-        </Html>
-      </Float>
-    </group>
-  );
-}
+import HeroVideoPlaceholder from "./HeroVideoPlaceholder";
 
 export default function HeroScene() {
   const reduceMotion = useReducedMotion();
@@ -151,9 +80,7 @@ export default function HeroScene() {
           <div className="absolute inset-0 -z-10 rounded-[2rem]" style={{ background: "radial-gradient(circle at 30% 20%, hsl(var(--neon) / 0.18), transparent 60%), radial-gradient(circle at 70% 60%, hsl(var(--gold) / 0.14), transparent 55%)" }} />
           <div className="glass rounded-[2rem] p-3 md:p-4" data-narrate="3D Dashboard|Floating glass panels suggest a premium dashboard in depth.">
             <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem]">
-              <Canvas camera={{ position: [0, 0.4, 4.2], fov: 48 }} dpr={[1, 2]}>
-                <Hero3D t={t} />
-              </Canvas>
+              <HeroVideoPlaceholder />
               <div className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(900px 400px at 80% 10%, hsl(var(--gold) / 0.08), transparent 55%), radial-gradient(900px 500px at 10% 80%, hsl(var(--neon) / 0.10), transparent 60%)" }} />
             </div>
           </div>

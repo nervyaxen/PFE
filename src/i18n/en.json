@@ -1,4 +1,69 @@
 {
+  "theme": {
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode"
+  },
+  "menu": {
+    "open": "Open menu",
+    "close": "Close menu",
+    "title": "Navigation",
+    "navigation": "Quick navigation",
+    "dashboard": "Dashboard",
+    "projectLibrary": "Project Library",
+    "createNewProject": "Create New Project",
+    "payment": "Payment",
+    "settings": "Settings"
+  },
+  "journey": {
+    "discover": "Discover",
+    "discoverDesc": "Explore ideas and the platform",
+    "build": "Build",
+    "buildDesc": "Create your project through narrative scenes",
+    "monitor": "Monitor",
+    "monitorDesc": "Your smart project dashboard",
+    "pillarTitle": "Your journey",
+    "discoverIdeas": "Discover ideas",
+    "buildIdeas": "Build ideas",
+    "monitorIdeas": "Monitor ideas"
+  },
+  "storyTimeline": {
+    "title": "Your story so far",
+    "spark": "Spark",
+    "vision": "Vision",
+    "audience": "Audience",
+    "monetization": "Monetization",
+    "competition": "Competition",
+    "risks": "Risks",
+    "roadmap": "Roadmap",
+    "dashboard": "Dashboard",
+    "step": "Step {{n}}"
+  },
+  "scenarios": {
+    "title": "What if?",
+    "subtitle": "Try a scenario to expand your idea",
+    "targetStudents": "What if this startup targets students?",
+    "targetStudentsHint": "Focus on education, affordability, campus adoption.",
+    "becomeSaaS": "What if this becomes a SaaS platform?",
+    "becomeSaaSHint": "Subscription, self-serve, scalability.",
+    "goB2B": "What if you go B2B first?",
+    "goB2BHint": "Enterprise segments, longer sales, higher ACV.",
+    "applyScenario": "Use this angle"
+  },
+  "ideaExpansion": {
+    "title": "Idea expansion",
+    "subtitle": "Suggestions to sharpen your spark",
+    "suggestion1": "Add one concrete use case or user type.",
+    "suggestion2": "Mention the main pain you're solving.",
+    "suggestion3": "One line on what makes it different."
+  },
+  "marketSignals": {
+    "label": "Market signals",
+    "targeting": "Targeting",
+    "industry": "Industry",
+    "region": "Region",
+    "risksFlagged": "Risks flagged",
+    "opportunity": "Opportunity"
+  },
   "nav": {
     "dashboard": "Dashboard",
     "projects": "Projects",
@@ -420,7 +485,8 @@
     "noStorage": "No Storage",
     "noStorageDesc": "We don't store card data",
     "securityGuarantee": "Security Guarantee",
-    "planLabel": "Plan"
+    "planLabel": "Plan",
+    "testSuccess": "Test payment successful."
   },
   "notFound": {
     "title": "404",
@@ -443,5 +509,210 @@
     "en": "English",
     "fr": "Français",
     "tn": "تونسي"
+  },
+  "library": {
+    "eyebrow": "Project library",
+    "title": "A cinematic library for startup ideas.",
+    "subtitle": "Browse, create, and evolve projects—from raw ideas to structured, AI-enhanced dashboards.",
+    "startAiCreatorCta": "Start AI guided project",
+    "startAiCreatorDesc": "Tell the story of your idea and let Machrou3i structure it.",
+    "resumeCta": "Resume saved story",
+    "resumeCtaDesc": "Continue where you left off with your last guided flow.",
+    "storyBlockNarration": "Storytelling Library|A calm space where founders turn ideas into structured projects.",
+    "storyBlockEyebrow": "Story-first creation",
+    "storyBlockTitle": "Build a project like you’d tell a story.",
+    "storyBlockBody": "Instead of filling cold forms, you move through scenes: the idea, the product, the market, the risks. Each answer flows into a living dashboard.",
+    "storyBullet1": "Eight narrative steps that feel like a conversation, not a questionnaire.",
+    "storyBullet2": "Glass panels, neon cues, and motion that matches the main dashboard.",
+    "storyBullet3": "Every sentence you share becomes roadmap, risk signals, and market context.",
+    "storyInlineCta": "Start the AI storytelling flow",
+    "previewNarration": "Library Preview|Glass tiles that hint at projects, roadmaps, and analytics already forming.",
+    "previewEyebrow": "Preview of guided projects",
+    "previewBody": "Each guided story becomes a cinematic project card with analytics-ready context.",
+    "previewCardTitle": "AI project capsule",
+    "previewCardBody": "A compact snapshot of idea, market, and risks—ready to open as a dashboard."
+  },
+  "cinematic": {
+    "concludingHint": "Before you continue — what you've shared so far:",
+    "chapter": "Chapter {{n}}",
+    "smartPrompt": "Tip: Be specific — it helps the AI build a sharper roadmap."
+  },
+  "aiCreator": {
+    "introSkip": "Skip intro",
+    "replayIntro": "Replay intro",
+    "introNextHint": "Next scene in a moment…",
+    "introFinalHint": "Starting your story…",
+    "introScenes": {
+      "spark": {
+        "title": "Your idea starts here.",
+        "hint": "Name your project and capture its essence in one line."
+      },
+      "vision": {
+        "title": "Define the problem and your solution.",
+        "hint": "What pain are you solving? What makes your approach unique?"
+      },
+      "audience": {
+        "title": "Who is this really for?",
+        "hint": "Target users, industry, and region—anchor your market insights."
+      },
+      "monetization": {
+        "title": "How does this make money?",
+        "hint": "Revenue model, pricing, and monetization strategy."
+      },
+      "competition": {
+        "title": "Who else is in the story?",
+        "hint": "Competitors and your advantages—shape positioning and roadmap."
+      },
+      "risks": {
+        "title": "Where could this get hard?",
+        "hint": "Technical, market, financial, and operational risks."
+      },
+      "roadmap": {
+        "title": "AI translates your story into a roadmap.",
+        "hint": "Milestones, phases, and suggested timelines—all from your answers."
+      },
+      "dashboard": {
+        "title": "Your living project dashboard.",
+        "hint": "Review, refine, and confirm—your story becomes a structured project."
+      }
+    },
+    "eyebrow": "AI guided project creator",
+    "title": "Tell the story. Let AI build the project.",
+    "subtitle": "An eight-step storytelling flow where Machrou3i listens, structures, and generates a living project dashboard.",
+    "stepLabel": "Step {{current}} / {{total}}",
+    "backToLibrary": "Back to library",
+    "previous": "Previous",
+    "next": "Next",
+    "nextToSummary": "Review story",
+    "confirmAndCreate": "Confirm & create dashboard",
+    "resumeBanner": "Resume your saved storytelling flow",
+    "liveSavingHint": "Your answers are saved as you type—you can leave and return at any time.",
+    "missingProjectTitle": "Project not found",
+    "missingProjectBody": "We couldn’t find this AI-guided project in your local library. It may have been cleared from this device.",
+    "projectDashboardEyebrow": "AI-generated project dashboard",
+    "unnamedProject": "Untitled project",
+    "editStoryCta": "Edit storytelling answers",
+    "sections": {
+      "overview": "Project overview",
+      "product": "Product or service",
+      "market": "Target market",
+      "businessModel": "Business model",
+      "risks": "Risks & challenges",
+      "roadmap": "AI-suggested roadmap"
+    },
+    "steps": {
+      "1": {
+        "eyebrow": "Scene 1 • Idea",
+        "title": "Let’s name the story we’re about to build.",
+        "assistantMessage": "Start with the heart of your idea. Give your project a name, a short one-line description, and choose what kind of initiative it is—startup, product, service, or platform. Think of this as the title card of your movie."
+      },
+      "2": {
+        "eyebrow": "Scene 2 • Product / Service",
+        "title": "What problem are we walking into—and how do we solve it?",
+        "assistantMessage": "Describe the problem this project exists to solve, the product or service you’re building, and what makes your approach feel different or special. The clearer the story, the sharper the roadmap."
+      },
+      "3": {
+        "eyebrow": "Scene 3 • Market",
+        "title": "Who is this really for?",
+        "assistantMessage": "Tell me about the people or companies you want to serve, the industry they live in, and the country or region you care about most. This will anchor market insights and economic predictions."
+      },
+      "4": {
+        "eyebrow": "Scene 4 • Business model",
+        "title": "How does this project make money—today and later?",
+        "assistantMessage": "Explain how revenue flows into this project, what your pricing model might look like, and how you imagine monetization working over time. Even rough ideas help shape AI-driven forecasts."
+      },
+      "5": {
+        "eyebrow": "Scene 5 • Competition",
+        "title": "Who else is in the story—and why do you stand out?",
+        "assistantMessage": "List your main competitors or alternatives your users might choose, and describe the edges you hold over them. This context will influence positioning, roadmap bets, and risk analysis."
+      },
+      "6": {
+        "eyebrow": "Scene 6 • Risks & challenges",
+        "title": "Where could this story get hard?",
+        "assistantMessage": "Share the technical, market, financial, and operational risks you can already see. Machrou3i will thread these into the roadmap so you can plan buffers instead of surprises."
+      },
+      "7": {
+        "eyebrow": "Scene 7 • AI roadmap",
+        "title": "Let’s translate your story into a roadmap.",
+        "assistantMessage": "Machrou3i analyzes everything you shared and drafts a phased roadmap with milestones, strategic steps, and initial tasks. You can revisit earlier steps at any time before confirming."
+      },
+      "8": {
+        "eyebrow": "Scene 8 • Final review",
+        "title": "Review your story before we light up the dashboard.",
+        "assistantMessage": "Here’s a compact summary of your answers. Jump back into any chapter to refine it—your dashboard will reflect the latest version the moment you confirm."
+      }
+    },
+    "fields": {
+      "projectName": "Project name",
+      "shortDescription": "Short description",
+      "category": "Project category",
+      "problem": "What problem does this project solve?",
+      "solution": "What product or service are you building?",
+      "uniqueness": "What makes this solution unique?",
+      "targetUsers": "Who are the users or customers?",
+      "industry": "Which industry does this belong to?",
+      "region": "Which country or region are you targeting?",
+      "revenueModel": "How will the project generate revenue?",
+      "pricingModel": "What pricing model are you considering?",
+      "monetizationStrategy": "Describe your monetization strategy.",
+      "competitors": "Who are the main competitors?",
+      "advantages": "What advantages do you have over them?",
+      "technicalRisks": "Potential technical risks",
+      "marketRisks": "Potential market risks",
+      "financialRisks": "Potential financial risks",
+      "operationalChallenges": "Operational challenges you anticipate"
+    },
+    "categories": {
+      "startup": "Startup",
+      "product": "Product",
+      "service": "Service",
+      "platform": "Platform",
+      "other": "Other"
+    },
+    "placeholders": {
+      "projectName": "Emerald OS",
+      "shortDescription": "An AI-native workspace turning chaotic ideas into structured projects.",
+      "category": "Select a category",
+      "problem": "Example: Teams lose momentum between idea, planning, and execution…",
+      "solution": "Example: A glassmorphic control center that turns raw notes into roadmaps, tasks, and forecasts…",
+      "uniqueness": "Example: Story-first onboarding, AI copilots, and live market signals all in one surface…",
+      "targetUsers": "Example: Early-stage founders, product teams, and startup studios…",
+      "industry": "Example: SaaS, productivity, fintech, healthtech…",
+      "region": "Example: MENA, EU, North America…",
+      "revenueModel": "Example: Subscription, usage-based, freemium with premium analytics…",
+      "pricingModel": "Example: Per-seat monthly pricing with startup-friendly tiers…",
+      "monetizationStrategy": "Example: Start with self-serve, then layer on team plans and enterprise packages…",
+      "competitors": "Example: Linear, Notion, Asana, spreadsheets, or manual workflows…",
+      "advantages": "Example: Deeper AI roadmap intelligence, cinematic dashboards, one codebase across platforms…",
+      "technicalRisks": "Example: Complex integrations, model reliability, performance at scale…",
+      "marketRisks": "Example: Crowded space, slow adoption, timing uncertainties…",
+      "financialRisks": "Example: Runway constraints, high acquisition costs, long sales cycles…",
+      "operationalChallenges": "Example: Hiring, support quality, governance, compliance…"
+    },
+    "roadmapIntro": "Based on your answers so far, Machrou3i generates a phased roadmap you can use as a starting point.",
+    "regenerateRoadmap": "Regenerate roadmap",
+    "generatingRoadmap": "Analyzing your story and weaving it into a roadmap…",
+    "roadmapSummaryLabel": "AI-generated narrative",
+    "timelineLabel": "Suggested timeline: {{timeline}}",
+    "summaryIntro": "This is the condensed story your dashboard will be built on. You can jump back to any step, edit your answers, and then return here to confirm.",
+    "summary": {
+      "step1": "Project idea",
+      "step2": "Product & solution",
+      "step3": "Target market",
+      "step4": "Business model",
+      "step5": "Competition",
+      "step6": "Risks & challenges",
+      "step7": "AI roadmap"
+    },
+    "editStep": "Edit step",
+    "stepHints": {
+      "step1": "AI tip: A clear name and one-line pitch help the roadmap focus on your core value.",
+      "step2": "AI tip: The sharper your problem–solution fit, the better the risk and market analysis.",
+      "step3": "AI tip: Specific audience and region improve market signals and economic forecasts.",
+      "step4": "AI tip: Revenue clarity shapes roadmap phases and financial risk modeling.",
+      "step5": "AI tip: Competitor context influences positioning and differentiation in the roadmap.",
+      "step6": "AI tip: Flagged risks are woven into milestones so you can plan buffers.",
+      "step7": "AI tip: You can regenerate the roadmap anytime after editing earlier steps."
+    }
   }
 }

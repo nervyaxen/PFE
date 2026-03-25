@@ -1,4 +1,74 @@
 {
+  "theme": {
+    "switchToLight": "Passer en mode clair",
+    "switchToDark": "Passer en mode sombre"
+  },
+  "menu": {
+    "open": "Ouvrir le menu",
+    "close": "Fermer",
+    "title": "Navigation",
+    "navigation": "Accès rapide",
+    "dashboard": "Tableau de bord",
+    "projectLibrary": "Bibliothèque de projets",
+    "createNewProject": "Créer un nouveau projet",
+    "payment": "Paiement",
+    "settings": "Paramètres"
+  },
+  "cinematic": {
+    "concludingHint": "Avant de continuer — ce que vous avez partagé :",
+    "chapter": "Chapitre {{n}}",
+    "smartPrompt": "Conseil : soyez précis — l’IA pourra générer une feuille de route plus claire."
+  },
+  "journey": {
+    "discover": "Découvrir",
+    "discoverDesc": "Explorer les idées et la plateforme",
+    "build": "Construire",
+    "buildDesc": "Créez votre projet par des scènes narratives",
+    "monitor": "Suivre",
+    "monitorDesc": "Votre tableau de bord projet intelligent",
+    "pillarTitle": "Votre parcours",
+    "discoverIdeas": "Découvrir des idées",
+    "buildIdeas": "Construire des idées",
+    "monitorIdeas": "Suivre des idées"
+  },
+  "storyTimeline": {
+    "title": "Votre histoire jusqu'ici",
+    "spark": "Étincelle",
+    "vision": "Vision",
+    "audience": "Audience",
+    "monetization": "Monétisation",
+    "competition": "Concurrence",
+    "risks": "Risques",
+    "roadmap": "Feuille de route",
+    "dashboard": "Tableau de bord",
+    "step": "Étape {{n}}"
+  },
+  "scenarios": {
+    "title": "Et si ?",
+    "subtitle": "Essayez un scénario pour enrichir votre idée",
+    "targetStudents": "Et si cette startup ciblait les étudiants ?",
+    "targetStudentsHint": "Focus éducation, accessibilité, adoption campus.",
+    "becomeSaaS": "Et si ça devenait une plateforme SaaS ?",
+    "becomeSaaSHint": "Abonnement, self-serve, scalabilité.",
+    "goB2B": "Et si vous visiez le B2B d'abord ?",
+    "goB2BHint": "Segments entreprise, ventes longues, ACV plus élevé.",
+    "applyScenario": "Utiliser cet angle"
+  },
+  "ideaExpansion": {
+    "title": "Enrichissement d'idée",
+    "subtitle": "Suggestions pour affiner votre étincelle",
+    "suggestion1": "Ajoutez un cas d'usage ou un type d'utilisateur concret.",
+    "suggestion2": "Mentionnez la principale douleur que vous résolvez.",
+    "suggestion3": "Une phrase sur ce qui vous différencie."
+  },
+  "marketSignals": {
+    "label": "Signaux marché",
+    "targeting": "Ciblage",
+    "industry": "Industrie",
+    "region": "Région",
+    "risksFlagged": "Risques signalés",
+    "opportunity": "Opportunité"
+  },
   "nav": {
     "dashboard": "Tableau de bord",
     "projects": "Projets",
@@ -420,7 +490,8 @@
     "noStorage": "Aucun stockage",
     "noStorageDesc": "Nous ne stockons pas les données carte",
     "securityGuarantee": "Garantie de sécurité",
-    "planLabel": "Forfait"
+    "planLabel": "Forfait",
+    "testSuccess": "Paiement test réussi."
   },
   "notFound": {
     "title": "404",
@@ -443,5 +514,205 @@
     "en": "English",
     "fr": "Français",
     "tn": "تونسي"
+  },
+  "library": {
+    "eyebrow": "Bibliothèque de projets",
+    "title": "Une bibliothèque cinématique pour les idées de startup.",
+    "subtitle": "Parcourez, créez et faites évoluer des projets—des idées brutes aux tableaux de bord structurés par l'IA.",
+    "startAiCreatorCta": "Lancer la création guidée par l'IA",
+    "startAiCreatorDesc": "Racontez l'histoire de votre idée et laissez Machrou3i la structurer.",
+    "resumeCta": "Reprendre l'histoire enregistrée",
+    "resumeCtaDesc": "Continuez là où vous vous êtes arrêté dans votre dernier flux guidé.",
+    "storyBlockNarration": "Bibliothèque narrative|Un espace calme où les fondateurs transforment des idées en projets structurés.",
+    "storyBlockEyebrow": "Création orientée récit",
+    "storyBlockTitle": "Construisez un projet comme vous raconteriez une histoire.",
+    "storyBlockBody": "Au lieu de remplir des formulaires froids, vous traversez des scènes : l'idée, le produit, le marché, les risques. Chaque réponse alimente un tableau de bord vivant.",
+    "storyBullet1": "Huit étapes narratives qui ressemblent à une conversation, pas à un questionnaire.",
+    "storyBullet2": "Panneaux en verre, repères néon et mouvement aligné sur le tableau de bord principal.",
+    "storyBullet3": "Chaque phrase devient feuille de route, signaux de risque et contexte marché.",
+    "storyInlineCta": "Démarrer le flux narratif IA",
+    "previewNarration": "Aperçu bibliothèque|Des tuiles en verre qui laissent deviner projets, roadmaps et analytics en formation.",
+    "previewEyebrow": "Aperçu des projets guidés",
+    "previewBody": "Chaque histoire guidée devient une carte projet cinématique prête à s'ouvrir en tableau de bord.",
+    "previewCardTitle": "Capsule projet IA",
+    "previewCardBody": "Un instantané compact de l'idée, du marché et des risques—prêt à être exploré."
+  },
+  "aiCreator": {
+    "introSkip": "Passer l'intro",
+    "replayIntro": "Revoir l'intro",
+    "introNextHint": "Prochaine scène dans un instant…",
+    "introFinalHint": "Démarrage de votre histoire…",
+    "introScenes": {
+      "spark": {
+        "title": "Votre idée commence ici.",
+        "hint": "Nommez votre projet et capturez son essence en une ligne."
+      },
+      "vision": {
+        "title": "Définissez le problème et votre solution.",
+        "hint": "Quelle douleur résolvez-vous ? Qu'est-ce qui rend votre approche unique ?"
+      },
+      "audience": {
+        "title": "Pour qui est-ce vraiment ?",
+        "hint": "Utilisateurs cibles, secteur et région—ancrez vos insights marché."
+      },
+      "monetization": {
+        "title": "Comment cela génère-t-il des revenus ?",
+        "hint": "Modèle de revenus, tarification et stratégie de monétisation."
+      },
+      "competition": {
+        "title": "Qui d'autre est dans l'histoire ?",
+        "hint": "Concurrents et vos avantages—structurez le positionnement et la feuille de route."
+      },
+      "risks": {
+        "title": "Où cela pourrait-il devenir difficile ?",
+        "hint": "Risques techniques, marché, financiers et opérationnels."
+      },
+      "roadmap": {
+        "title": "L'IA transforme votre histoire en feuille de route.",
+        "hint": "Jalons, phases et délais suggérés—tout à partir de vos réponses."
+      },
+      "dashboard": {
+        "title": "Votre tableau de bord projet vivant.",
+        "hint": "Revoyez, affinez et confirmez—votre histoire devient un projet structuré."
+      }
+    },
+    "eyebrow": "Créateur de projet guidé par l'IA",
+    "title": "Racontez l'histoire. L'IA construit le projet.",
+    "subtitle": "Un flux narratif en huit étapes où Machrou3i écoute, structure et génère un tableau de bord vivant.",
+    "stepLabel": "Étape {{current}} / {{total}}",
+    "backToLibrary": "Retour à la bibliothèque",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "nextToSummary": "Relire l'histoire",
+    "confirmAndCreate": "Confirmer et créer le tableau de bord",
+    "resumeBanner": "Reprendre votre flux narratif enregistré",
+    "liveSavingHint": "Vos réponses sont enregistrées au fil de la saisie—vous pouvez quitter et revenir à tout moment.",
+    "missingProjectTitle": "Projet introuvable",
+    "missingProjectBody": "Impossible de trouver ce projet guidé par l'IA dans votre bibliothèque locale. Il a peut-être été supprimé de cet appareil.",
+    "projectDashboardEyebrow": "Tableau de bord projet généré par l'IA",
+    "unnamedProject": "Projet sans nom",
+    "editStoryCta": "Modifier les réponses de l'histoire",
+    "sections": {
+      "overview": "Vue d'ensemble du projet",
+      "product": "Produit ou service",
+      "market": "Marché cible",
+      "businessModel": "Modèle économique",
+      "risks": "Risques et défis",
+      "roadmap": "Feuille de route suggérée par l'IA"
+    },
+    "steps": {
+      "1": {
+        "eyebrow": "Scène 1 • Idée",
+        "title": "Nommons l'histoire que nous allons construire.",
+        "assistantMessage": "Commencez par le cœur de votre idée. Donnez un nom à votre projet, une courte description en une phrase, et choisissez le type d'initiative—startup, produit, service ou plateforme. Pensez-y comme au carton-titre de votre film."
+      },
+      "2": {
+        "eyebrow": "Scène 2 • Produit / Service",
+        "title": "Quel problème abordons-nous—et comment le résolvons-nous ?",
+        "assistantMessage": "Décrivez le problème que ce projet vient résoudre, le produit ou service que vous construisez, et ce qui rend votre approche différente. Plus le récit est clair, plus la feuille de route sera nette."
+      },
+      "3": {
+        "eyebrow": "Scène 3 • Marché",
+        "title": "Pour qui est-ce vraiment ?",
+        "assistantMessage": "Parlez-moi des personnes ou entreprises que vous voulez servir, du secteur dans lequel elles évoluent et du pays ou de la région que vous visez. Cela ancrera les insights marché et les prévisions économiques."
+      },
+      "4": {
+        "eyebrow": "Scène 4 • Modèle économique",
+        "title": "Comment ce projet génère-t-il des revenus—aujourd'hui et demain ?",
+        "assistantMessage": "Expliquez comment les revenus entrent dans ce projet, à quoi pourrait ressembler votre modèle de tarification et comment vous imaginez la monétisation dans le temps. Même des idées brutes aident l'IA à cadrer les prévisions."
+      },
+      "5": {
+        "eyebrow": "Scène 5 • Concurrence",
+        "title": "Qui partage la scène—et pourquoi vous démarquez-vous ?",
+        "assistantMessage": "Listez vos principaux concurrents ou alternatives que vos utilisateurs pourraient choisir, et décrivez les avantages que vous avez sur eux. Ce contexte influencera le positionnement, la roadmap et l'analyse de risque."
+      },
+      "6": {
+        "eyebrow": "Scène 6 • Risques et défis",
+        "title": "Où cette histoire peut-elle devenir difficile ?",
+        "assistantMessage": "Partagez les risques techniques, marché, financiers et opérationnels que vous voyez déjà. Machrou3i les intégrera à la feuille de route pour prévoir des marges plutôt que des surprises."
+      },
+      "7": {
+        "eyebrow": "Scène 7 • Feuille de route IA",
+        "title": "Traduire votre histoire en feuille de route.",
+        "assistantMessage": "Machrou3i analyse tout ce que vous avez partagé et propose une roadmap phasée avec jalons, étapes stratégiques et premières tâches. Vous pouvez revenir à tout moment sur les scènes précédentes avant de confirmer."
+      },
+      "8": {
+        "eyebrow": "Scène 8 • Revue finale",
+        "title": "Relisez votre histoire avant d'allumer le tableau de bord.",
+        "assistantMessage": "Voici un résumé compact de vos réponses. Revenez dans n'importe quelle scène pour l'affiner—votre tableau de bord reflétera la dernière version dès validation."
+      }
+    },
+    "fields": {
+      "projectName": "Nom du projet",
+      "shortDescription": "Description courte",
+      "category": "Catégorie de projet",
+      "problem": "Quel problème ce projet résout-il ?",
+      "solution": "Quel produit ou service construisez-vous ?",
+      "uniqueness": "Qu'est-ce qui rend cette solution unique ?",
+      "targetUsers": "Qui sont les utilisateurs ou clients ?",
+      "industry": "Dans quel secteur cela s'inscrit-il ?",
+      "region": "Quel pays ou région ciblez-vous ?",
+      "revenueModel": "Comment le projet générera-t-il des revenus ?",
+      "pricingModel": "Quel modèle de tarification envisagez-vous ?",
+      "monetizationStrategy": "Décrivez votre stratégie de monétisation.",
+      "competitors": "Quels sont les principaux concurrents ?",
+      "advantages": "Quels avantages avez-vous par rapport à eux ?",
+      "technicalRisks": "Risques techniques potentiels",
+      "marketRisks": "Risques marché potentiels",
+      "financialRisks": "Risques financiers potentiels",
+      "operationalChallenges": "Défis opérationnels anticipés"
+    },
+    "categories": {
+      "startup": "Startup",
+      "product": "Produit",
+      "service": "Service",
+      "platform": "Plateforme",
+      "other": "Autre"
+    },
+    "placeholders": {
+      "projectName": "Emerald OS",
+      "shortDescription": "Un espace de travail IA-native qui transforme le chaos en projets structurés.",
+      "category": "Sélectionnez une catégorie",
+      "problem": "Exemple : Les équipes perdent de l'élan entre idée, planification et exécution…",
+      "solution": "Exemple : Un cockpit glassmorphique qui transforme des notes brutes en roadmaps, tâches et prévisions…",
+      "uniqueness": "Exemple : Onboarding par récit, copilotes IA et signaux marché live sur une seule surface…",
+      "targetUsers": "Exemple : Fondateurs early-stage, équipes produit, studios de startups…",
+      "industry": "Exemple : SaaS, productivité, fintech, healthtech…",
+      "region": "Exemple : MENA, UE, Amérique du Nord…",
+      "revenueModel": "Exemple : Abonnement, facturation à l'usage, freemium avec analytics premium…",
+      "pricingModel": "Exemple : Tarification par siège avec paliers adaptés aux startups…",
+      "monetizationStrategy": "Exemple : Démarrer en self-serve, puis ajouter des offres équipe et entreprise…",
+      "competitors": "Exemple : Linear, Notion, Asana, feuilles de calcul, workflows manuels…",
+      "advantages": "Exemple : Intelligence de roadmap IA, tableaux de bord cinématiques, code unique multi-plateformes…",
+      "technicalRisks": "Exemple : Intégrations complexes, fiabilité des modèles, performance à l'échelle…",
+      "marketRisks": "Exemple : Marché saturé, adoption lente, incertitudes de timing…",
+      "financialRisks": "Exemple : Runway limité, coûts d'acquisition élevés, cycles de vente longs…",
+      "operationalChallenges": "Exemple : Recrutement, qualité du support, gouvernance, conformité…"
+    },
+    "roadmapIntro": "À partir de vos réponses, Machrou3i génère une roadmap phasée que vous pouvez utiliser comme base.",
+    "regenerateRoadmap": "Régénérer la feuille de route",
+    "generatingRoadmap": "Analyse de votre histoire et tissage en feuille de route…",
+    "roadmapSummaryLabel": "Narratif généré par l'IA",
+    "timelineLabel": "Chronologie suggérée : {{timeline}}",
+    "summaryIntro": "Ceci est le récit condensé sur lequel votre tableau de bord sera construit. Vous pouvez revenir sur n'importe quelle étape, modifier vos réponses, puis confirmer ici.",
+    "summary": {
+      "step1": "Idée de projet",
+      "step2": "Produit et solution",
+      "step3": "Marché cible",
+      "step4": "Modèle économique",
+      "step5": "Concurrence",
+      "step6": "Risques et défis",
+      "step7": "Feuille de route IA"
+    },
+    "editStep": "Modifier l'étape",
+    "stepHints": {
+      "step1": "Conseil IA : Un nom clair et un pitch en une ligne aident la feuille de route à cibler votre valeur.",
+      "step2": "Conseil IA : Plus le fit problème–solution est net, meilleures sont l'analyse des risques et du marché.",
+      "step3": "Conseil IA : Un public et une région précis améliorent les signaux marché et les prévisions économiques.",
+      "step4": "Conseil IA : La clarté des revenus structure les phases de la feuille de route et la modélisation financière.",
+      "step5": "Conseil IA : Le contexte concurrentiel influence le positionnement et la différenciation dans la feuille de route.",
+      "step6": "Conseil IA : Les risques signalés sont intégrés aux jalons pour planifier des marges.",
+      "step7": "Conseil IA : Vous pouvez régénérer la feuille de route après avoir modifié les étapes précédentes."
+    }
   }
 }
