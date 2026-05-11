@@ -40,6 +40,7 @@ const Navbar = () => {
     { to: "/marketing-video", label: t("nav.marketingVideo") },
     { to: "/payment", label: t("nav.payment") },
     ...(user ? [{ to: "/dashboard", label: t("nav.dashboard") }] : []),
+    ...(user ? [{ to: "/chatbot", label: t("nav.chatbot", "AI Assistant") }] : []),
     ...(isAdmin ? [{ to: "/admin", label: t("nav.admin") }] : []),
   ];
 

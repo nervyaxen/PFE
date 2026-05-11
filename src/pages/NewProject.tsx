@@ -102,7 +102,7 @@ const NewProject = () => {
 
     try {
       const res = await fetch(
-        "http://localhost:5678/webhook-test/analyze-project",
+        "https://notgivinashit.app.n8n.cloud/webhook-test/analyze-project",
         {
           method: "POST",
           headers: {

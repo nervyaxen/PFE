@@ -20,6 +20,7 @@ import Results from "./pages/Results";
 import Admin from "./pages/Admin";
 import MarketingVideo from "./pages/MarketingVideo";
 import Payment from "./pages/Payment";
+import Chatbot from "./pages/Chatbot";
 import NotFound from "./pages/NotFound";
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
@@ -49,6 +50,7 @@ const AppContent = () => {
           <Route path="/admin" element={<Admin />} />
           <Route path="/marketing-video" element={<MarketingVideo />} />
           <Route path="/payment" element={<Payment />} />
+          <Route path="/chatbot" element={<Chatbot />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
