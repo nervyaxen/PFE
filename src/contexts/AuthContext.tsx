@@ -3,6 +3,7 @@ import { createContext, useContext, useState, ReactNode } from "react";
 export type UserRole = "admin" | "user";
 
 export interface User {
+  avatar: string;
   id: string;
   email: string;
   name: string;
@@ -22,11 +23,17 @@ const AuthContext = createContext<AuthContextType>({} as AuthContextType);
 const TEST_USERS: Record<string, { password: string; user: User }> = {
   "admin@machrou3i.com": {
     password: "admin123",
-    user: { id: "1", email: "admin@machrou3i.com", name: "Admin", role: "admin" },
+    user: {
+      id: "1", email: "admin@machrou3i.com", name: "Admin", role: "admin",
+      avatar: ""
+    },
   },
   "user@machrou3i.com": {
     password: "user123",
-    user: { id: "2", email: "user@machrou3i.com", name: "User", role: "user" },
+    user: {
+      id: "2", email: "user@machrou3i.com", name: "User", role: "user",
+      avatar: ""
+    },
   },
 };
 
@@ -48,7 +55,10 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
   const signup = async (name: string, email: string, password: string) => {
     if (TEST_USERS[email]) return false;
-    const newUser: User = { id: crypto.randomUUID(), email, name, role: "user" };
+    const newUser: User = {
+      id: crypto.randomUUID(), email, name, role: "user",
+      avatar: ""
+    };
     TEST_USERS[email] = { password, user: newUser };
     setUser(newUser);
     localStorage.setItem("machrou3i_user", JSON.stringify(newUser));

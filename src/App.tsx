@@ -16,7 +16,6 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import NewProject from "./pages/NewProject";
-import Results from "./pages/Results";
 import Admin from "./pages/Admin";
 import MarketingVideo from "./pages/MarketingVideo";
 import Payment from "./pages/Payment";
@@ -46,7 +45,6 @@ const AppContent = () => {
           <Route path="/signup" element={<Signup />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/new-project" element={<NewProject />} />
-          <Route path="/results/:id" element={<Results />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/marketing-video" element={<MarketingVideo />} />
           <Route path="/payment" element={<Payment />} />
