@@ -19,4 +19,20 @@ export default defineConfig(({ mode }) => ({
     },
     dedupe: ["react", "react-dom", "react/jsx-runtime", "react/jsx-dev-runtime", "@tanstack/react-query", "@tanstack/query-core"],
   },
+  build: {
+    chunkSizeWarningLimit: 700,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          react: ["react", "react-dom", "react/jsx-runtime", "react/jsx-dev-runtime"],
+          router: ["react-router-dom"],
+          motion: ["framer-motion"],
+          supabase: ["@supabase/supabase-js"],
+          recharts: ["recharts"],
+          three: ["three"],
+          vendor: ["@xenova/transformers", "date-fns", "i18next", "react-i18next"],
+        },
+      },
+    },
+  },
 }));

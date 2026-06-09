@@ -29,11 +29,11 @@ const Chatbot = () => {
 
   const bottomRef = useRef<HTMLDivElement>(null);
 
-  if (!user) return <Navigate to="/login" replace />;
-
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, loading]);
+
+  if (!user) return <Navigate to="/login" replace />;
 
   // ✨ STREAM TEXT
   const streamText = async (text: string) => {
